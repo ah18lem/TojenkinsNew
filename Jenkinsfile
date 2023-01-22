@@ -5,6 +5,7 @@ pipeline {
       steps {
       bat 'gradlew test'
          junit 'build/test-results/test/TEST-Matrix.xml'
+        
       }
     
     }
