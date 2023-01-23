@@ -8,7 +8,6 @@ pipeline {
          cucumber buildStatus: 'UNSTABLE',
                 reportTitle: 'My report',
                 fileIncludePattern: 'target/report.json',
-
                 trendsLimit: 10
        
       }
