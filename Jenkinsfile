@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage("test") {
       steps {
-      bat 'gradlew test'
-      
-        
+      bat 'gradlew test'  
       }
     
     }
