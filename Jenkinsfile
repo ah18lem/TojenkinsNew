@@ -8,9 +8,9 @@ pipeline {
          cucumber buildStatus: 'UNSTABLE',
                 reportTitle: 'My report',
                 fileIncludePattern: 'target/*.json',
-                trendsLimit: 10
-       
-      }
+           
+           trendsLimit: 10
+        }
     
     }
     
