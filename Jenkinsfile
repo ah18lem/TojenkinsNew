@@ -42,6 +42,15 @@ pipeline {
         bat 'gradlew publish'
       }
     }
+    
+     stage('Notification') {
+      steps {
+
+       notifyEvents message: 'Notifications from jenkins', token: 'KAkV-LGfvF0H3siYhFVqWbFjlJyvZydI'
+
+
+      }
+    }
     }
     
     
