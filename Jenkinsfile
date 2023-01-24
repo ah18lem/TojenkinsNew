@@ -5,7 +5,7 @@ pipeline {
       steps {
       bat 'gradlew test'
       junit 'build/test-results/test/TEST-Matrix.xml'
-         cucumber buildStatus: 'SUCCESS',
+         cucumber buildStatus: 'UNSTABLE',
                 reportTitle: 'My report',
                 fileIncludePattern: 'target/*.json',
            
