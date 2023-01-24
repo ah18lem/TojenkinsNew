@@ -53,7 +53,18 @@ pipeline {
     }
     }
     
-    
+    post {
+        success {
+          mail(subject: 'Build Success', body: 'New Build is deployed !', from: 'harhadahlem5@gmail.com', to: 'harhadahlem5@gmail.com')
+        }
+        failure {
+          mail(subject: 'Build Failure', body: "the new build isn't deployed succesfully !", from: 'harhadahlem5@gmail.com', to: 'harhadahlem5@gmail.com')
+        }
+       
+      }
+
+
+ 
     
     
 }
