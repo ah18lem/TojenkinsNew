@@ -59,8 +59,7 @@ pipeline {
         }
         failure {
           mail(subject: 'Build Failure', body: "the new build isn't deployed succesfully !", from: 'harhadahlem5@gmail.com', to: 'harhadahlem5@gmail.com')
-        }
-       
+        } 
       }
 
 
