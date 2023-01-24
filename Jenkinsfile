@@ -11,6 +11,13 @@ pipeline {
            
            trendsLimit: 10
         }
+       stage('Code Analysis') {
+          steps {
+            withSonarQubeEnv('sonar') {
+              bat 'gradle sonar'
+            }
+          }
+        }
     
     }
     
