@@ -43,12 +43,7 @@ pipeline {
     }
     
      stage('Notification') {
-      steps {
-
-       notifyEvents message: 'Notifications from jenkins', token: 'KAkV-LGfvF0H3siYhFVqWbFjlJyvZydI'
-
-
-      }
+      steps { notifyEvents message: 'Notifications from jenkins', token: 'KAkV-LGfvF0H3siYhFVqWbFjlJyvZydI'}
     }
     }
     
