@@ -49,10 +49,10 @@ pipeline {
     
     post {
         success {
-          mail(subject: 'Build Success', body: 'Build deployé ', from: 'harhadahlem5@gmail.com', to: 'harhadahlem5@gmail.com')
+          mail(subject: 'Build Success', body: 'Build deployé ', from: 'ia_harhad@esi.dz', to: 'ia_harhad@esi.dz')
         }
         failure {
-          mail(subject: 'Build Failure', body: "Build non Deployé", from: 'harhadahlem5@gmail.com', to: 'harhadahlem5@gmail.com')
+          mail(subject: 'Build Failure', body: "Build non Deployé", from: 'ia_harhad@esi.dz', to: 'ia_harhad@esi.dz')
         } 
       }
 
